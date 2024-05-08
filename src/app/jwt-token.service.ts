@@ -13,7 +13,7 @@ export class JwtTokenService {
       return of({ succes: true, token: usersapis.token }).pipe(delay(1000));
     }
     else {
-      return of({ secces: false }).pipe(delay(1000));
+      return of({ succes: false }).pipe(delay(1000));
     }
   }
   registeruser(surname: string, email: string, password: string, name: string): Observable<any> {

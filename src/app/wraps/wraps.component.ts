@@ -29,13 +29,14 @@ onSubmit():void{
   if(this.name,this.email,this.password,this.surname){
     if(this.auth.Usersapilogin(this.name,this.email,this.password,this.surname)){
       console.log("User Tizimiga kirdi!");
-      
+        this.router.navigate(['/detal']);
     }
     else{
       console.log("xatolik");
       
     }
   }
+
 }
 logout(){
   this.auth.logout();
@@ -53,6 +54,7 @@ onSubmits():void{
   if(this.names,this.passwords){
     if(this.auth2.Logins(this.names,this.passwords)){
       console.log("User Tizimiga kirdi!");
+    
       
     }
     else{
