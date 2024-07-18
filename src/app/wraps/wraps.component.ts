@@ -29,7 +29,7 @@ onSubmit():void{
   if(this.name,this.email,this.password,this.surname){
     if(this.auth.Usersapilogin(this.name,this.email,this.password,this.surname)){
       console.log("User Tizimiga kirdi!");
-        this.router.navigate(['/detal']);
+      
     }
     else{
       console.log("xatolik");
